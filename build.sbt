@@ -14,3 +14,7 @@ assemblyMergeStrategy in assembly := {
   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
   case x => MergeStrategy.first
 }
+
+publishTo := Some("Git" at "https://github.com/Denzzel/bla")
+
+publishArtifact := false
